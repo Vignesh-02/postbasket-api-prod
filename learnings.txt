@@ -1,0 +1,32 @@
+1. html files will always go inside views and not public.
+You can insert css folder and the respective css styles files inside 
+the 'public' folder.
+
+2. You don't need to use '/' inside of path.join
+
+3. If we only use cors() which is not recommended,  our apis are open for all
+To do this we need to write the following command in the app/server.js
+
+// our api is now avaliable to the whole public
+app.use(cors())
+
+4. Logger middleware is used at the beginning and errorHandler is used before the listen in app.js
+
+5. !origin in lien 5 of corsOptions.js would allow us to test our apis from Postman, ThunderClient
+
+6. To view cors error go to a specific website 
+such as www.google.com or www.stackoverflow.com , b
+basically a website with a proper origin and not the default chrome tab
+
+7. 'express-async-handler' package helps us in minimizing the number of try catch blocks
+
+8. const users = await User.find().select('-password').lean()
+The -password inside select tells us that except for password(use '-' to exclude an item from find)
+return all other fields
+
+9.lean() only returns json data and not other extra metadata from mongoose
+
+10. If you want to avoid using async handler and importing it in every file where you have DB operations,
+ you can install npm package exress-async-errors and use it in place of async handler.
+
+11. We are setting isError: true in  errorHandler.js middleware so that the RTK Query in the frontend detects it.

@@ -1,0 +1,59 @@
+20221102	03:09:38	dde75860-7ef5-40be-a6a0-827751c3cd24	Error: Not allowed by CORS	OPTIONS	/	https://www.google.com
+20221102	03:09:38	0df8d81c-eb2c-4992-bb88-03f97cffd7cc	Error: Not allowed by CORS	GET	/	https://www.google.com
+20221102	03:10:39	2583619e-74e5-49f8-8bf5-9ac170e07b60	Error: Not allowed by CORS	OPTIONS	/	https://stackoverflow.com
+20221102	03:10:39	f0df8821-249e-4d47-846f-24c4ca2c7c42	Error: Not allowed by CORS	GET	/	https://stackoverflow.com
+20221102	03:12:50	d7503ff0-4d60-431c-b0b6-e27138e671ed	Error: Not allowed by CORS	OPTIONS	/	https://www.google.com
+20221102	03:12:50	65517988-5def-4c4f-aed9-35d36db50631	Error: Not allowed by CORS	GET	/	https://www.google.com
+20221102	03:13:48	422d83f4-e59a-4ede-8e94-b5d23ef92512	Error: Not allowed by CORS	OPTIONS	/	https://www.google.com
+20221102	03:13:48	56cf4958-8a30-459d-b458-1412906e9bfb	Error: Not allowed by CORS	GET	/	https://www.google.com
+20221102	03:15:58	1b8f7e3b-c9a9-4fa0-a526-01dacc937a52	Error: Not allowed by CORS	OPTIONS	/	https://stackoverflow.com
+20221102	03:15:58	bfb3d45a-8f0c-44f3-98f2-8e537db4e6ca	Error: Not allowed by CORS	GET	/	https://stackoverflow.com
+20221102	03:18:13	5947fcf8-10d8-4342-a14a-bc9b095d1193	Error: Not allowed by CORS	OPTIONS	/	https://stackoverflow.com
+20221102	03:18:13	dc6b6b54-0a7b-49b5-a2fd-510e99f38dc4	Error: Not allowed by CORS	GET	/	https://stackoverflow.com
+20221102	03:19:12	6d179c38-d386-4638-a28c-5da333c70ffd	Error: Not allowed by CORS	OPTIONS	/	https://stackoverflow.com
+20221102	03:19:12	ef32e6e5-9c4f-4099-ae68-e0d73e2da4b7	Error: Not allowed by CORS	GET	/	https://stackoverflow.com
+20221102	03:19:59	964f6ec9-dd24-4772-90c5-1024a589ee5d	Error: Not allowed by CORS	OPTIONS	/	https://stackoverflow.com
+20221102	03:19:59	a8f8503e-ab62-4f0c-952f-5c712a72eed5	Error: Not allowed by CORS	GET	/	https://stackoverflow.com
+20221102	03:20:24	00ed576c-1653-4a18-ac39-a6aed4c9dfac	Error: Not allowed by CORS	OPTIONS	/	https://stackoverflow.com
+20221102	03:20:24	c208b8a3-b4c0-4c18-9daf-fba6a41e6f6a	Error: Not allowed by CORS	GET	/	https://stackoverflow.com
+20221103	01:40:52	9408ee11-6488-46f0-918f-0bbefb7e35a9	SyntaxError: Unexpected token , in JSON at position 4	POST	/users	undefined
+20221103	01:56:09	3da8c327-0cb2-42bc-8d69-db0a23580593	CastError: Cast to ObjectId failed for value "6362e36ec9112f110135674" (type string) at path "_id" for model "User"	PATCH	/users	undefined
+20221103	02:32:50	4a928a95-a2cb-44c7-963f-dbc8868ae63c	ObjectParameterError: Parameter "filter" to findOne() must be an object, got 6362e36ec9112f1101356789	DELETE	/users	undefined
+20221103	02:33:40	3e9bf95b-1f7f-4a37-a1d0-90189989d9f9	CastError: Cast to ObjectId failed for value "6362e36ec9112f110135678" (type string) at path "user" for model "Note"	DELETE	/users	undefined
+20221103	02:34:39	6d9559ac-d819-4216-a0c2-b2a32c91aec8	ObjectParameterError: Parameter "filter" to findOne() must be an object, got 6362e36ec9112f1101356784	DELETE	/users	undefined
+20221103	02:34:55	0bfcb033-3ec1-4925-a411-837e9c12dcf8	ObjectParameterError: Parameter "filter" to findOne() must be an object, got 6362e36ec9112f1101356783	DELETE	/users	undefined
+20221118	19:01:05	9668773e-bca1-43a8-98fe-13455b309a0f	Error: Not allowed by CORS	GET	/users	http://localhost:3003
+20221118	23:56:33	1cc34d0e-abf2-4277-bca0-6a9e58de3646	Error: Not allowed by CORS	GET	/notes	http://localhost:3000
+20221119	00:00:14	916ba9c5-9aa5-4af4-bf72-1f3bafb4bb87	Error: Not allowed by CORS	GET	/	http://localhost:3000
+20221119	00:01:33	0736d6e5-14f8-4e2c-a13d-e2d977fb39e1	Error: Not allowed by CORS	GET	/notes	http://localhost:3000
+20221119	00:41:17	fdb024b2-9b15-4f55-bd33-f883865f2b60	ReferenceError: id is not defined	PATCH	/users	undefined
+20221119	00:42:07	31afc8b8-a98c-4581-944f-0345042abba6	ReferenceError: id is not defined	PATCH	/users	undefined
+20221119	00:42:46	7e3d0c07-dc71-4012-abc9-82babc42a0bb	ReferenceError: password is not defined	PATCH	/users	undefined
+20221119	01:08:12	e7e35463-5e14-4b47-80a9-3840c9ac31fc	ReferenceError: text is not defined	POST	/notes	undefined
+20221119	01:09:21	52d6a091-88e0-4a3f-8d57-55cf8c9fe4af	ReferenceError: note is not defined	POST	/notes	undefined
+20221119	01:14:36	db33ba8e-ef18-470d-9e04-293dd726dfec	ReferenceError: notee is not defined	GET	/notes	undefined
+20221119	01:17:18	c1212039-3b89-4525-80e6-3a4805fc573d	ReferenceError: notee is not defined	GET	/notes	undefined
+20221119	01:17:41	749c5349-4928-4061-983c-c05a9913a00b	TypeError: Cannot read properties of null (reading 'username')	GET	/notes	undefined
+20221119	01:18:23	9898a621-db9d-4a46-b3cb-72d83dfd3312	TypeError: Cannot read properties of null (reading 'username')	GET	/notes	undefined
+20221119	01:20:22	b1ac5413-34c2-4f0f-ac36-5752329ddcf0	TypeError: Cannot read properties of null (reading 'username')	GET	/notes	undefined
+20221119	01:21:30	2188f9f5-5f33-4d1e-b66c-653fc4d123c1	TypeError: Cannot read properties of null (reading 'username')	GET	/notes	undefined
+20221119	01:26:44	3732dac6-610a-445d-ab59-5f62213cd683	TypeError: Cannot read properties of null (reading 'username')	GET	/notes	undefined
+20221119	01:27:38	0067256e-839a-4421-ab50-a41e50cbba74	TypeError: Cannot read properties of null (reading 'username')	GET	/notes	undefined
+20221119	01:28:01	06f1dae8-ccac-4591-ac50-613d9ecef829	TypeError: Cannot read properties of null (reading 'username')	GET	/notes	undefined
+20221119	01:28:50	49c83309-f4da-4411-9533-f4f2a1f059b5	TypeError: Cannot read properties of null (reading 'username')	GET	/notes	undefined
+20221119	01:30:07	a77457aa-a839-4428-b52b-6769278043c2	TypeError: Cannot read properties of null (reading 'username')	GET	/notes	undefined
+20221119	01:31:22	c4d248f4-721e-4521-be08-5aae2486bd44	TypeError: Cannot read properties of null (reading 'username')	GET	/notes	undefined
+20221119	01:31:39	8f42e3b8-9c19-4c0a-8eba-4782a9a35777	TypeError: Cannot read properties of null (reading 'username')	GET	/notes	undefined
+20221119	01:31:47	e3783ebd-6d58-4a17-bca7-b041e7096c32	TypeError: Cannot read properties of null (reading 'username')	GET	/notes	undefined
+20221119	01:32:14	c0fbbb1b-9ca2-4e21-9393-50bcce590276	TypeError: Cannot read properties of null (reading 'username')	GET	/notes	undefined
+20221119	01:34:40	4dfd8936-c07c-4632-afd9-505fa6c7b278	TypeError: Cannot read properties of null (reading 'username')	GET	/notes	undefined
+20221119	01:37:13	db9cfcbf-5501-4ee5-93fb-1ce0af6fa47d	TypeError: Cannot read properties of null (reading 'username')	GET	/notes	undefined
+20221119	01:40:18	e617af97-3409-4c4f-8270-752607fe08c3	TypeError: Cannot read properties of null (reading 'username')	GET	/notes	undefined
+20221119	01:51:53	df998e6b-068a-40b1-a535-ec949568491c	TypeError: note.deleteOne is not a function	DELETE	/notes	undefined
+20221119	02:04:11	185ee0fe-96d3-41a7-a501-009c7bd1f33b	ReferenceError: username is not defined	PATCH	/notes	undefined
+20221119	02:05:26	ad37ec4a-c884-4887-90c2-5890efcfbda3	ReferenceError: username is not defined	PATCH	/notes	undefined
+20221119	02:05:29	391d8b8e-69ed-48a0-9e4b-fda9f6f58ecf	ReferenceError: username is not defined	PATCH	/notes	undefined
+20221119	02:06:33	4c238a31-010f-42fd-9116-d455440116b4	ReferenceError: username is not defined	PATCH	/notes	undefined
+20221119	02:07:25	c7022362-3050-43c7-a6f3-246ef93ee58b	ReferenceError: username is not defined	PATCH	/notes	undefined
+20221120	22:32:19	4d47f4b3-4c7c-4e59-a1ae-e54c86b7f1f2	TypeError: Cannot read properties of undefined (reading 'toString')	PATCH	/notes	http://localhost:3003
+20221120	22:34:07	3a788f39-e964-449b-ae4a-11b6e9b967cc	TypeError: Cannot read properties of undefined (reading 'toString')	PATCH	/notes	http://localhost:3003

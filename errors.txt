@@ -1,0 +1,21 @@
+1. To view cors error go to a specific website 
+such as www.google.com or www.stackoverflow.com , b
+basically a website with a proper origin and not the default chrome tab
+
+2. In allowedOrigins make sure to not put a '/' after the url of the website.
+Otherwise, you will still get a CORS error.
+
+For e.g. 
+const allowedOrigins = [
+    'http://localhost:5001',
+    'https://www.google.com',
+    'https://stackoverflow.com'
+]
+    
+    AND not
+
+const allowedOrigins = [
+    'http://localhost:5001/',
+    'https://www.google.com/',
+    'https://stackoverflow.com/'
+]
