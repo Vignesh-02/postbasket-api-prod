@@ -27,7 +27,6 @@ const getAllNotes = asyncHandler(async (req,res) => {
 
 
          const user = await User.findById(note.user).exec()
-        console.log(user)
         return { ...note, username: user.username}
     }))
     res.json(noteswWithUser)
@@ -47,11 +46,11 @@ const createNewNote = asyncHandler(async (req,res) => {
     }
 
     // Check for duplicate title
-    const duplicate = await User.findOne({ username }).
-    collation({ locale: 'en', strength: 2 }).lean().exec()
+    const duplicate = await Note.findOne({ title }).collation({ locale: 'en', strength: 2 }).lean().exec()
+
     
     if(duplicate){
-        return res.status(409).json({ message: 'Duplicate note'})
+        return res.status(409).json({ message: 'Duplicate note title'})
     }
     
     const noteObject = { user, title, text, completed}
@@ -60,7 +59,7 @@ const createNewNote = asyncHandler(async (req,res) => {
 
 
     if(note){
-        res.status(201).json({ message: `New note created for user with id ${user}`})
+        res.status(201).json({ message: `New note received`})
     }else{
         res.status(400).json({ message: 'Invalid note data received'})
     }
@@ -75,7 +74,7 @@ const createNewNote = asyncHandler(async (req,res) => {
 
 const updateNote = asyncHandler(async (req,res) => {
     const { id, user, title, text, completed } = req.body
-    
+    console.log(req.body)
         // confirm data
      if(!id || !user || !title || !text || typeof completed !== 'boolean'){
         return res.status(400).json({ message: 'All fields are required '})
@@ -91,10 +90,9 @@ const updateNote = asyncHandler(async (req,res) => {
         return res.status(400).json({ message: 'Note not found '})
     }
 
-    // Check for duplicate
-    const duplicate = await User.findOne({ username }).
-    collation({ locale: 'en', strength: 2 }).lean().exec()
-
+    // Check for duplicate title
+    const duplicate = await Note.findOne({ title }).collation({ locale: 'en', strength: 2 }).lean().exec()
+    
     // Allow duplicates to the original user
     if(duplicate && duplicate?._id.toString() !== id){
         return res.status(409).json({ message: 'Duplicate note title '})
